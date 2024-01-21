@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Vidéo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="script/script.js"></script>
+
+    <div class="banner">
+        <img src="image/Logo.png" alt="Logo du site" class="logo">
+        <h1 class="title">Convertisseur de Vidéo</h1>
+        <div class="menu-toggle">
+            <div></div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <h1>Développement :</h1>
+        <p>
+            <strong>Développeur :</strong><br />meghost2004<br /><br />
+            <strong>À l'aide de l'intelligence artificielle :</strong><br />ChatGpt<br />Bing copilot<br />
+        </p>
+
+        <h1>Package utilisé :</h1>
+        <ul>
+            <li><strong>Express</strong> | version: ^4.18.2</li>
+            <li><strong>Ffmpeg-static</strong> | version: ^5.2.0</li>
+            <li><strong>Fluent-ffmpeg</strong> | version: ^2.1.2</li>
+            <li><strong>Ytdl-core</strong> | version: ^4.11.5</li>
+        </ul>
+
+        <footer>
+            <div class="footer-content">
+                <p>Ce site est un projet open source retrouvable sur github.</p>
+                <div class="logo-container">
+                    <a href="https://github.com/meghost2004/Youtube-Video-Downloader/tree/main" target="_blank">
+                        <img src="image/Github.png" alt="Logo" class="footer-logo">
+                    </a>
+                </div>
+                <div class="logo-container">
+                    <a href="https://discord.gg/GK9ZNgWq43" target="_blank">
+                        <img src="image/Discord.png" alt="Logo" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="container">
+        <h1>Télécharger des vidéo mp4 et mp3 de youtube</h1>
+
+        <div id="contentVideo">
+            <img id="imageVideo" src="">
+            <h2 id="titleVideo"></h2>
+        </div>
+
+        <div id="content">
+            <div class="input-group">
+                <input type="text" id="videoLink" placeholder="Entrez le lien de la vidéo">
+                <button id="convertButton" class="convert-button" onclick="convertAndDownload()">Convertir la
+                    vidéo</button>
+            </div>
+
+            <select id="formatSelect">
+                <option value="mp4">MP4</option>
+                <option value="mp3">MP3</option>
+            </select>
+
+            <div id="loadingMessage" style="display: none;">Traitement en cours...</div>
+            <a id="downloadLink" style="display: none;" download>Télécharger la vidéo convertie</a>
+        </div>
+    </div>
+</body>
+
+</html>

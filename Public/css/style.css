@@ -1,0 +1,306 @@
+body {
+    font-size: 1.5vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    height: 70vh;
+    overflow: auto;
+}
+
+#content {
+    height: 20vh;
+    margin-top: auto;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#videoLink {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+}
+
+#convertButton {
+    border: 1px solid #ccc;
+    border-radius: 0 15px 15px 0;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 1.5vh;
+}
+
+#formatSelect {
+    width: 20vw;
+    height: 5vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#downloadLink {
+    margin-top: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #87CEEB;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2vh;
+    width: 50vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingMessage {
+    margin-top: 1%;
+    font-size: 2.5vh;
+}
+
+/* Logo site */
+.banner {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    height: 6vh;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 2vh;
+}
+
+
+/* Menu hamburger. */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 4vh;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.menu-toggle::before,
+.menu-toggle::after,
+.menu-toggle div {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #333;
+}
+
+.menu-toggle.cross::before {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+}
+
+.menu-toggle.cross div {
+    opacity: 0;
+}
+
+.menu-toggle.cross::after {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+}
+
+/* Site info */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#overlay h1 {
+    color: #007BFF;
+    border-bottom: 1px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+#overlay p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#overlay li {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#overlay footer {
+    z-index: 10000;
+    background-color: #fff;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#overlay .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#overlay .footer-logo {
+    height: 6vh;
+    margin-right: 10px;
+}
+
+#overlay .footer-content p {
+    margin-right: auto;
+}
+
+#overlay .logo-container {
+    position: fixed;
+    right: 10px;
+    height: 7vh;
+}
+
+#overlay .logo-container:last-child {
+    right: 10vh;
+}
+
+#overlay .footer-logo {
+    height: 6vh;
+}
+
+/* Video info */
+#contentVideo {
+    text-align: center;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vh;
+}
+
+#imageVideo {
+    margin-top: 10px;
+    display: none;
+    width: 35vw;
+    height: 35vh;
+}
+
+
+/* Message log */
+.message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    font-size: 24px;
+    margin-right: 10px;
+    background-color: #154360;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.text {
+    font-size: 1.5vh;
+}
+
+
+/* Size */
+/* Video info */
+.input-group, #formatSelect, #downloadLink {
+    width: 50vw;
+    height: 5vh;
+}
+
+#formatSelect {
+    width: 20vw;
+    height: 5vh;
+}
+
+#downloadLink {
+    font-size: 2vh;
+    width: 40vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingMessage {
+    margin-top: 1%;
+    font-size: 2.5vh;
+}
+
+#videoLink, #convertButton {
+    font-size: 1.5vh;
+}
+
+/* Message log */
+.message, .info, .text {
+    font-size: 1.5vh;
+}
