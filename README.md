@@ -19,22 +19,22 @@ Youtube-Video-Downloader est un projet open source pour convertir des vidéos Yo
 # Installation ffmpeg :
 Étape 1 :
 ```
-> Extrayez le fichier ffmpeg téléchargé plus haut.
+- Extrayez le fichier ffmpeg téléchargé plus haut.
 ```
 
 Étape 2 :
 ```
-> Renommez le dossier extrait en FFmpeg.
+- Renommez le dossier extrait en FFmpeg.
 ```
 
 Étape 3 :
 ```
-> Déplacez le dossier FFmpeg à la racine de votre disque dur.
+- Déplacez le dossier FFmpeg à la racine de votre disque dur.
 ```
 
 Étape 4 :
 ```
-> Ajoutez FFmpeg à votre chemin système.
+- Ajoutez FFmpeg à votre chemin système.
 ```
 ```
 - Ouvrez l’invite de commande en tant qu’administrateur, puis tapez la commande suivante pour ajouter FFmpeg à votre chemin système : setx /m PATH "C:\\ffmpeg\\bin;%PATH%".
