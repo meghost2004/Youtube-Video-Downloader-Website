@@ -14,7 +14,7 @@ Youtube-Video-Downloader est un projet open source pour convertir des vidéos Yo
 > Installez tous les packages require via le terminal en tapant **npm install nom_du_packages**.
 
 Étape 2 :
-> Installez ffmpeg sur votre pc : [Download FFmpeg](https://ffmpeg.org/download.html#build-windows).
+Installez FFmpeg sur votre PC : Rendez-vous sur [Download FFmpeg](https://ffmpeg.org/download.html#build-windows) et sélectionnez la version de FFmpeg qui correspond à votre système d’exploitation. Assurez-vous de télécharger la version appropriée pour garantir une compatibilité optimale.
 
 # Installation ffmpeg :
 Étape 1 :
