@@ -36,6 +36,22 @@ Youtube-Video-Downloader est un projet open source pour convertir des vidéos Yo
 ```
 - Ajoutez FFmpeg à votre chemin système.
 ```
+Option 1.
 ```
-- Ouvrez l’invite de commande en tant qu’administrateur, puis tapez la commande suivante pour ajouter FFmpeg à votre chemin système : setx /m PATH "C:\\ffmpeg\\bin;%PATH%".
+- Ouvrez l'invite de commande en tant qu'administrateur.
+- Tapez la commande suivante pour ajouter FFmpeg à votre chemin système : setx /m PATH "C:\\ffmpeg\\bin;%PATH%".
+- Appuyez sur Entrée.
+- Redémarrez votre ordinateur pour que les modifications prennent effet.
+- Pour vérifier que FFmpeg a été correctement ajouté à votre chemin système, ouvrez une nouvelle fenêtre d'invite de commande et tapez `ffmpeg -version`. Si FFmpeg est correctement installé, vous devriez voir des informations sur la version de FFmpeg s'afficher.
+```
+Option 2.
+```
+- Appuyez sur la touche Windows pour ouvrir le menu Démarrer.
+- Tapez "path" dans la barre de recherche des applications et ouvrez le premier résultat obtenu.
+- Une fois l'application ouverte, cliquez sur "Variables d'environnement".
+- Dans la fenêtre des variables d'environnement, sous l'onglet "Variables système", recherchez et sélectionnez "Path", puis cliquez sur "Modifier".
+- Dans la fenêtre d'édition, cliquez sur "Nouveau", puis tapez le chemin d'accès complet à votre dossier bin de FFmpeg, qui devrait être "C:\FFMPEG\bin".
+- Cliquez sur "OK" pour fermer toutes les fenêtres.
+- Redémarrez votre ordinateur pour que les modifications prennent effet.
+- Pour vérifier que FFmpeg a été correctement ajouté à votre chemin système, ouvrez une nouvelle fenêtre d'invite de commande et tapez `ffmpeg -version`. Si FFmpeg est correctement installé, vous devriez voir des informations sur la version de FFmpeg s'afficher.
 ```
